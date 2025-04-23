@@ -1,5 +1,8 @@
 :root {
   --header-background-image:  url('../images/cover-image-dark.png');
-  --menu-color: #ff0070;
+  --menu-color: #FF0070;
+  --menu-color-transparent: #FF007066;
   --menu-text-size: 18px;
+  --header-font-color: #DB00FF;
+  --accent-color: #FF0070;
 }

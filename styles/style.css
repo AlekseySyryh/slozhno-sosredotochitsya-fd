@@ -8,14 +8,17 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "IBM Plex mono", "Arial", sans-serif;;
+  font-family: "IBM Plex mono", "Arial", sans-serif;
+  font-weight: 700;
 }
-
 
 .header {
   position: relative;
   padding: 10px;
   block-size: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
 }
 
 .lamp {
@@ -64,4 +67,59 @@
   border-bottom: 1px solid var(--menu-color);
   inline-size: 25px;
   block-size: 25px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+  justify-self: end;
+  align-items: center;
+  justify-items: center;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--menu-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  min-width: 70px;
+  min-height: 26px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--menu-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--menu-color-transparent);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--menu-color);
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--header-font-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  align-self: center;
+  justify-self: center;
+}
+
+.header__description {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.title-decor {
+  background: var(--accent-color);
 }
