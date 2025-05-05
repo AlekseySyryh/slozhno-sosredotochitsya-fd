@@ -112,7 +112,7 @@
   color: var(--focus-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   align-self: center;
-  justify-self: center;
+  justify-self: start;
 }
 
 .header__description {
@@ -129,11 +129,6 @@
   flex-direction: column;
   margin: 0px 10px;
   gap: 50px
-}
-
-.section {
-  font-size: 18px;
-  line-height: 130%;
 }
 
 .group {
@@ -196,6 +191,19 @@
   outline: 1px solid var(--article-content-color);
 }
 
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+
 .footer {
   position: relative;
   padding: 10px;
@@ -209,5 +217,112 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--focus-color);
+}
+
+@media (width >= 768px) {
+  .page {
+    gap: 60px;
+  }
+
+  .header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .header__title,
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  
+  .lamp {
+    top: 20px;
+    right: 29px;  
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .header__theme-menu-list {
+    margin: 20px;
+  }
+
+  .header__description {
+    max-width: 364px;
+    justify-self: end;
+    margin: 20px;
+  }
  
+  .main {
+    gap: 80px;
+  }
+
+  .group {
+    padding: 0px 10px;
+  }
+
+  .group_why,
+  .group_how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .article__images {
+    gap: 20px;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .image_sunset {
+    grid-column: span 2;
+  }
+
+  .image_icecream {
+    grid-row: span 2;
+  }
+
+  .image_tape {
+    grid-row: span 2;
+  }
+
+  .image_street {
+    grid-column: span 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    align-self: self-start;
+  }
+
+  .header__theme-menu-list {
+    margin: 10px;
+    flex-direction: row;
+    align-self: self-start;
+    justify-self: center;
+  }
+
+  .header__description {
+    max-width: 491px;
+  }
+
+  .group_what .group__title {
+    max-width: 34vh;
+  }
+
+  .group_what .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
