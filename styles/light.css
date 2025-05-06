@@ -1,16 +1,31 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --header-background-image:  url('../images/cover-image-light.png');
+  --accent-color: #FF8DCB;
+  --menu-color: #353430;
+  --focus-color: #FFC2E6;
+  --menu-color-transparent: ##35343066;
+  --group-title-color: var(--menu-color);
+  --article-title-color: var(--menu-color);
+  --article-content-color: var(--menu-color);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .lamp {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --header-background-image:  url('../images/cover-image-light.png');
+    --accent-color: #FF8DCB;
+    --menu-color: #353430;
+    --focus-color: #FFC2E6;
+    --menu-color-transparent: ##35343066;
+    --group-title-color: var(--menu-color);
+    --article-title-color: var(--menu-color);
+    --article-content-color: var(--menu-color);
+  }
+  
+  .theme-auto .lamp {
+    display: none;
+  }
 }

@@ -217,6 +217,8 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--focus-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
+
 }
 
 @media (width >= 768px) {
