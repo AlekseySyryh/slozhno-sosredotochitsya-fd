@@ -3,7 +3,7 @@
   --accent-color: #FF8DCB;
   --menu-color: #353430;
   --focus-color: #FFC2E6;
-  --menu-color-transparent: ##35343066;
+  --menu-color-transparent: #35343066;
   --group-title-color: var(--menu-color);
   --article-title-color: var(--menu-color);
   --article-content-color: var(--menu-color);
@@ -19,7 +19,7 @@
     --accent-color: #FF8DCB;
     --menu-color: #353430;
     --focus-color: #FFC2E6;
-    --menu-color-transparent: ##35343066;
+    --menu-color-transparent: #35343066;
     --group-title-color: var(--menu-color);
     --article-title-color: var(--menu-color);
     --article-content-color: var(--menu-color);
