@@ -270,12 +270,13 @@
   }
 
   .group {
-    padding: 0px 20px;
+    margin: 0px 20px;
   }
 
   .group_text {
     display: grid;
-    grid-template-columns: 1fr 66%;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
 
   .group_what .content {
@@ -323,6 +324,10 @@
 
   .header__description {
     max-width: 491px;
+  }
+
+  .group_text {
+    grid-template-columns: 32% auto;
   }
 
   .group_what .content {
