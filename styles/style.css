@@ -146,10 +146,14 @@
   gap: 20px;
 }
 
-.group__title {
-  color: var(--group-title-color);
+.content__title {
   font-size: 18px;
   line-height: 130%;
+  font-weight: 700;
+}
+
+.group__title {
+  color: var(--group-title-color);
 }
 
 .content {
@@ -167,16 +171,10 @@
 .article__title {
   color: var(--article-title-color);
   background-color: var(--accent-color);
-  font-size: 18px;
-  line-height: 130%;
 }
 
-.article__subtitle {
-  color: var(--article-title-color);
-  background-color: var(--accent-color);
-  font-size: 18px;
+.article__title-small {
   font-weight: 400;
-  line-height: 130%;
 }
 
 .article__content {
@@ -276,7 +274,6 @@
   .group_text {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .group_what .content {
